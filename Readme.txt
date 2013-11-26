@@ -1,4 +1,4 @@
-Some excerise
+String matching excerise without using the string and regex methods related to search or matches.
 ----------------------------------------
 by : Romeliz C. Valenciano Jr.
 

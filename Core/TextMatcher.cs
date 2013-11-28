@@ -22,7 +22,7 @@ namespace CodeTest.Core
         /// <param name="thePattern">The string pattern to match</param>
         public TextMatcher(string theString, string thePattern)
         {
-            _theString = theString;
+            _theString = theString;                                         
             _thePattern = thePattern;
         }
 

@@ -24,6 +24,10 @@ namespace CodeTest.Core.Writer
             HighlightMatchedString(matchingList);
         }
 
+        /// <summary>
+        /// Given the <typeparamref name="matchinglist"/> highlight the matching text.
+        /// </summary>
+        /// <param name="matchingList"></param>
         private void HighlightMatchedString(IEnumerable<int> matchingList) 
         {
             if ((matchingList.Count() == 0) || (matchingList.FirstOrDefault() == 0))
@@ -39,7 +43,6 @@ namespace CodeTest.Core.Writer
             }
 
             int j = 0;
-            int len = 0;
             ConsoleColor defaultColor = Console.BackgroundColor;
 
             for (int i = 0; i < _theString.Length; i++)
@@ -47,9 +50,8 @@ namespace CodeTest.Core.Writer
                 if (matchingList.Contains(i + 1))
                 {
                     Console.BackgroundColor = ConsoleColor.Red;
-                    len = _thePattern.Length;
 
-                    for (j = 0; j < len; j++)
+                    for (j = 0; j < _thePattern.Length; j++)
                     {
                         Console.Write(_theString[i + j]);
                     }

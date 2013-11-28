@@ -9,10 +9,6 @@ namespace CodeTest.ConsoleApplication
     {
         static void Main(string[] args)
         {
-
-
-   
-
             string inputString;
             string subText;
             TextMatcher textMatcher;

@@ -9,11 +9,14 @@ namespace CodeTest.ConsoleApplication
     {
         static void Main(string[] args)
         {
+
+
+   
+
             string inputString;
             string subText;
             TextMatcher textMatcher;
             DisplayOutput displayOut;
-
             Console.WriteLine("-----------------------------------------");
             Console.WriteLine("** TextMatcher test harness **");
             Console.WriteLine("-----------------------------------------");
@@ -27,7 +30,7 @@ namespace CodeTest.ConsoleApplication
                 subText = Console.ReadLine();
 
                 textMatcher = new TextMatcher(inputString, subText);
-                displayOut = new DisplayOutput(new ConsoleWriter());
+                displayOut = new DisplayOutput(new FancyConsoleWriter(inputString, subText));
                 displayOut.Display(textMatcher.GetMatchingPositions());
 
                 Console.WriteLine("\nPress <ESC> to quit, any key to resume");

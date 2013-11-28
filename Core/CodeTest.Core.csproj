@@ -42,7 +42,6 @@
   <ItemGroup>
     <Compile Include="Helper\Uitlity.cs" />
     <Compile Include="Writer\ConsoleWriter.cs" />
-    <Compile Include="Writer\FancyConsoleWriter.cs" />
     <Compile Include="Writer\IWriter.cs" />
     <Compile Include="DisplayOutput.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

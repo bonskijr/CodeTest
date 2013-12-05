@@ -37,7 +37,6 @@ namespace CodeTest.Tests
         [TestMethod]
         public void GetMatchingPositions_WithNoMatches_ShouldNotReturnMatchingPositions()
         {
-            //var subTextMatcher = new TextMatcher("the quick brown fox", "XX");
             var subTextMatcher = new TextMatcher(theString, "XX");
             var matching = subTextMatcher.GetMatchingPositions();
 
@@ -70,8 +69,6 @@ namespace CodeTest.Tests
             var matching = subTextMatcher.GetMatchingPositions();
 
             Assert.AreEqual(0, matching.FirstOrDefault());
-
-           // CollectionAssert.AreEquivalent(new List<int>(), subTextMatcher.GetMatchingPositions().ToArray());
         }
     }
 

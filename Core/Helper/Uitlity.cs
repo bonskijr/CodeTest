@@ -11,14 +11,14 @@ namespace CodeTest.Core.Helper
         {
             if (matchingList == null) throw new ArgumentNullException("matchingList must not be null");
 
-            if (matchingList.FirstOrDefault() == 0 || matchingList.Count() == 0)
-            {
-                return new StringBuilder().Append("<no matches>");
-            }
-        
             StringBuilder sb = new StringBuilder();
             string delimiter = string.Empty;
 
+            if (matchingList.FirstOrDefault() == 0 || matchingList.Count() == 0)
+            {
+                return sb.Append("<no matches>");
+            }
+        
             foreach (var item in matchingList)
             {
                 sb.Append(delimiter).Append(item);
@@ -31,7 +31,7 @@ namespace CodeTest.Core.Helper
 
         public static string ExtractString(this string _theString, int start, int length = 0) 
         {
-            if (string.IsNullOrEmpty(_theString)) throw new ArgumentNullException("");
+            if (string.IsNullOrEmpty(_theString)) throw new ArgumentNullException("calling string must not null or empty");
 
             StringBuilder sb = new StringBuilder();
 

@@ -43,13 +43,15 @@ namespace CodeTest.Core.Writer
             }
 
             int j = 0;
-            ConsoleColor defaultColor = Console.BackgroundColor;
+            ConsoleColor defaultBackgroundColor = Console.BackgroundColor;
+            ConsoleColor defaultForegroundColor = Console.ForegroundColor;
 
             for (int i = 0; i < _theString.Length; i++)
             {
                 if (matchingList.Contains(i + 1))
                 {
-                    Console.BackgroundColor = ConsoleColor.Red;
+                    Console.BackgroundColor = ConsoleColor.Yellow;
+                    Console.ForegroundColor = ConsoleColor.White;
 
                     for (j = 0; j < _thePattern.Length; j++)
                     {
@@ -60,11 +62,15 @@ namespace CodeTest.Core.Writer
                 }
                 else
                 {
-                    Console.BackgroundColor = defaultColor;
+                    Console.BackgroundColor = defaultBackgroundColor;
+                    Console.ForegroundColor = defaultForegroundColor;
                     Console.Write(_theString[i]);
                 }
             }
+            Console.BackgroundColor = defaultBackgroundColor; //reset color
+            Console.ForegroundColor = defaultForegroundColor; //reset color
             Console.WriteLine();
+            
           
         }
 

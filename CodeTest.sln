@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeTest.Core", "Core\CodeT
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeTest.ConsoleApplication", "Harness\Console\CodeTest.ConsoleApplication.csproj", "{51EBADAF-A27F-4DD4-B76B-CC074088B680}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeTest.Web", "Harness\Web\CodeTest.Web.csproj", "{1DE26BAD-2D65-4CA8-A6C5-0D1D94607D0F}"
+EndProject
 Global
 	GlobalSection(TestCaseManagementSettings) = postSolution
 		CategoryFile = Solution1.vsmdi
@@ -58,6 +60,16 @@ Global
 		{51EBADAF-A27F-4DD4-B76B-CC074088B680}.Release|Mixed Platforms.Build.0 = Release|x86
 		{51EBADAF-A27F-4DD4-B76B-CC074088B680}.Release|x86.ActiveCfg = Release|x86
 		{51EBADAF-A27F-4DD4-B76B-CC074088B680}.Release|x86.Build.0 = Release|x86
+		{1DE26BAD-2D65-4CA8-A6C5-0D1D94607D0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DE26BAD-2D65-4CA8-A6C5-0D1D94607D0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DE26BAD-2D65-4CA8-A6C5-0D1D94607D0F}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{1DE26BAD-2D65-4CA8-A6C5-0D1D94607D0F}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{1DE26BAD-2D65-4CA8-A6C5-0D1D94607D0F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{1DE26BAD-2D65-4CA8-A6C5-0D1D94607D0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DE26BAD-2D65-4CA8-A6C5-0D1D94607D0F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1DE26BAD-2D65-4CA8-A6C5-0D1D94607D0F}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{1DE26BAD-2D65-4CA8-A6C5-0D1D94607D0F}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{1DE26BAD-2D65-4CA8-A6C5-0D1D94607D0F}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

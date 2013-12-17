@@ -66,6 +66,8 @@ namespace CodeTest.Core.Writer
                     Console.ForegroundColor = defaultForegroundColor;
                     Console.Write(_theString[i]);
                 }
+
+
             }
             Console.BackgroundColor = defaultBackgroundColor; //reset color
             Console.ForegroundColor = defaultForegroundColor; //reset color

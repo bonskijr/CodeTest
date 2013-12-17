@@ -70,6 +70,14 @@ namespace CodeTest.Tests
 
             Assert.AreEqual(0, matching.FirstOrDefault());
         }
+
+        public void GetMatchingPositions_WithPatternLengthGreaterThanTheStringLength_ShouldReturnNoMatchingPositions() 
+        {
+            var subTextMatcher = new TextMatcher("a", "aaa");
+            var matching = subTextMatcher.GetMatchingPositions();
+
+            Assert.AreEqual(0, matching.FirstOrDefault());
+        }
     }
 
     

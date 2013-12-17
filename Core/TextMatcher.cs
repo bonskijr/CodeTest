@@ -32,21 +32,28 @@ namespace CodeTest.Core
         /// <returns><typeparamref name="IEnumerable"/> of matching positions. An empty collection if there's no match.</returns>
         public IEnumerable<int> GetMatchingPositions()                
         {
-            _thePattern = _thePattern.ToLowerInvariant();
-            _theString = _theString.ToLowerInvariant();
-
             if (string.IsNullOrEmpty(_theString))
             {
                 yield return 0;
                 yield break;
             }
 
-
             if (string.IsNullOrEmpty(_thePattern)) 
             {
                 yield return 0;
                 yield break;
             }
+
+            // return no matching if pattern length is longer than the string itself
+            if (_thePattern.Length > _theString.Length) 
+            {
+                yield return 0;
+                yield break;
+            }
+
+            _thePattern = _thePattern.ToLowerInvariant();
+            _theString = _theString.ToLowerInvariant();
+
 
             int j = 0;
             StringBuilder sb = new StringBuilder();
